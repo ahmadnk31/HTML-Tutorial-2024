@@ -3,14 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIDEO & AUDIO</title>
+    <title>Forms</title>
 </head>
 <body>
-    <video src="https://player.vimeo.com/progressive_redirect/playback/446415079/rendition/720p/file.mp4?loc=external&oauth2_token_id=1747418641&signature=154fd27aa469bde723f099899edf102defbd80e0d01f3a51a61e691bd675a211" controls autoplay muted loop>
-        Your browser does not support the video tag.
-    </video>
-    <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls autoplay loop>
-        Your browser does not support the audio tag.
-    </audio>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+        <br>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+        <br>
+        <p>What is your gender</p>
+        <input type="radio" name="gender" value="male" id="male"> Male <br>
+        <input type="radio" name="gender" value="female" id="femal"> Female <br>
+        <p>Select a color:</p>
+        <select name="color" id="clor">
+            <option value="">Select your favorite color</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+        <br>
+        <p>Select your favorite programming language</p>
+        <input type="checkbox" name="language" value="python" id="python"> Python <br>
+        <input type="checkbox" name="language" value="javascript" id="javascript"> Javascript <br>
+        <p>Your birthday is</p>
+        <input type="date" name="birthday" id="birthday">
+        <br>
+        <p>Upload your profile picture</p>
+        <input type="file" name="profile" id="profile"  accept=".mp3" multiple> 
+        <br>
+        <p>Enter your phone number</p>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+        <br>
+        <p>Enter your website</p>
+        <input type="url" name="website" id="website" placeholder="https://www.example.com">
+        <br>
+        <p>Enter your age</p>
+        <input type="number" name="age" id="age" min="18" max="100" step="2">
+        <br>
+        <p>Enter your credit card number</p>
+        <input type="tel" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="1234-5678-9012-3456">
+        <br>
+        <input type="range" min="1" max="100" step="5">
+        <br>
+        <input type="color">
+        <br>
+        <input type="month">
+        <br>
+        <input type="week">
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
